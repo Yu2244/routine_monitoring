@@ -1,0 +1,82 @@
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li, button, input, select, textarea, table, th, td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+#root {
+  height: 100vh; /* Ensure root takes full viewport height */
+  display: flex; /* Use flexbox for App layout */
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #d0d0d0;
+}
+
+button:active {
+  background-color: #c0c0c0;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Default to full width within container */
+  margin-bottom: 10px; /* Add some space below inputs */
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Utility Classes */
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.error {
+  color: red;
+}
+
+.screen-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: calc(100% - 40px); /* Adjust height considering padding */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.screen-title {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 1.5em;
+  color: #333;
+}

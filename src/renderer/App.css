@@ -1,0 +1,75 @@
+.app-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+}
+
+.sidebar {
+  width: 200px; /* Fixed width for the sidebar */
+  background-color: #333; /* Dark background for sidebar */
+  color: #fff; /* Light text color */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  height: 100%; /* Full height of the container */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.4em;
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none; /* Remove default list bullets */
+  flex-grow: 1; /* Allow list to take available space */
+}
+
+.sidebar li {
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  margin-bottom: 5px;
+  padding-left: 10px; /* Indent text slightly */
+}
+
+.sidebar li:hover {
+  background-color: #555; /* Highlight on hover */
+}
+
+.sidebar li.active {
+  background-color: #007bff; /* Active screen highlight */
+  font-weight: bold;
+}
+
+.data-actions {
+  margin-top: auto; /* Push data actions to the bottom */
+  padding-top: 20px;
+  border-top: 1px solid #555;
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+}
+
+.data-actions button {
+  width: 100%; /* Make buttons fill sidebar width */
+  background-color: #555;
+  color: #fff;
+  border: none;
+}
+
+.data-actions button:hover {
+  background-color: #777;
+}
+
+.main-content {
+  flex-grow: 1; /* Take remaining horizontal space */
+  height: 100%; /* Full height */
+  overflow-y: auto; /* Enable scrolling for main content if needed */
+  background-color: #f4f4f4; /* Background for the content area */
+  padding: 20px; /* Padding around the content */
+}
