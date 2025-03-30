@@ -1,0 +1,18 @@
+/* Styles moved from WikiEditScreen.jsx */
+.wiki-edit-screen .wiki-editor-textarea {
+  width: 100%;
+  height: calc(100vh - 200px); /* Adjust height as needed */
+  margin-bottom: 15px;
+  font-family: monospace; /* Use monospace for Markdown editing */
+}
+.wiki-edit-screen .wiki-edit-actions {
+  display: flex;
+  gap: 10px;
+}
+.wiki-edit-screen .cancel-button {
+    background-color: #6c757d;
+    color: white;
+}
+.wiki-edit-screen .cancel-button:hover {
+    background-color: #5a6268;
+}

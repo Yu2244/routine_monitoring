@@ -1,0 +1,200 @@
+/* Styles moved from EditScreen.jsx */
+.edit-screen .checklist-meta {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.edit-screen .checklist-meta label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.edit-screen .checklist-meta input[type="text"],
+.edit-screen .checklist-meta textarea {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.edit-screen .questions-title {
+  margin-bottom: 15px;
+}
+
+.edit-screen .questions-list {
+  margin-bottom: 20px;
+}
+
+.edit-screen .question-editor {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.edit-screen .question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+}
+.edit-screen .question-header span {
+  font-weight: bold;
+}
+.edit-screen .question-actions {
+    display: flex;
+    gap: 5px;
+}
+.edit-screen .question-actions .move-button {
+    padding: 2px 6px;
+    font-size: 0.8em;
+}
+.edit-screen .question-actions .remove-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 3px 8px;
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+.edit-screen .question-actions .remove-button:hover {
+  background-color: #d32f2f;
+}
+.edit-screen .question-actions .remove-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.edit-screen .question-editor textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.edit-screen .question-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between option groups */
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+}
+.edit-screen .question-options > div { /* Direct children divs */
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+
+.edit-screen .question-options label {
+  display: flex; /* Use flex for alignment */
+  align-items: center;
+  gap: 8px; /* Space between label text and input */
+  font-size: 0.9em;
+}
+.edit-screen .question-options select,
+.edit-screen .question-options input[type="number"],
+.edit-screen .question-options input[type="text"] {
+  flex-grow: 1; /* Allow input to take available space */
+   width: auto; /* Override default width: 100% */
+   margin-bottom: 0; /* Remove default margin */
+}
+
+
+.edit-screen .multiple-choice-options h4,
+.edit-screen .number-validation h4,
+.edit-screen .random-order-settings h4,
+.edit-screen .graph-config-settings h4 { /* Added graph config */
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: normal;
+  color: #555;
+}
+.edit-screen .multiple-choice-options .option-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  gap: 5px;
+}
+.edit-screen .multiple-choice-options .option-item input {
+    flex-grow: 1;
+}
+
+.edit-screen .remove-option-button {
+  background: none;
+  border: none;
+  color: #f44336;
+  font-size: 1.2em;
+  padding: 0 5px;
+  line-height: 1;
+}
+.edit-screen .add-option-button,
+.edit-screen .add-question-button {
+  margin-top: 10px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
+.edit-screen .add-question-button {
+    display: block; /* Make it block level */
+    margin: 20px 0; /* Add vertical margin */
+}
+
+.edit-screen .number-validation,
+.edit-screen .random-order-settings .random-details,
+.edit-screen .graph-config-settings .graph-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between options */
+  margin-top: 5px;
+  padding-left: 15px; /* Indent options */
+}
+.edit-screen .number-validation label,
+.edit-screen .random-order-settings .random-details label,
+.edit-screen .graph-config-settings .graph-details label {
+    width: fit-content; /* Prevent labels from stretching */
+    display: flex; /* Align label text and input nicely */
+    align-items: center;
+    gap: 5px;
+}
+.edit-screen .graph-config-settings .graph-details input[type="text"],
+.edit-screen .graph-config-settings .graph-details input[type="number"],
+.edit-screen .graph-config-settings .graph-details select {
+    width: auto; /* Don't force full width */
+    flex-grow: 0; /* Don't grow */
+}
+.edit-screen .graph-config-settings .graph-details label span {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+
+.edit-screen .save-actions {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+}
+.edit-screen .save-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+.edit-screen .save-button:hover {
+  background-color: #45a049;
+}
+.edit-screen .cancel-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+   padding: 10px 15px;
+}
+.edit-screen .cancel-button:hover {
+    background-color: #d32f2f;
+}

@@ -1,0 +1,92 @@
+/* Styles moved from HistoryScreen.jsx */
+.history-screen .filter-area {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.history-screen .filter-area h4 {
+  margin-bottom: 10px;
+}
+.history-screen .filter-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap; /* 折り返しを許可 */
+  gap: 15px; /* 要素間のスペース */
+  align-items: center;
+}
+.history-screen .filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* ラベルと入力欄のスペース */
+}
+.history-screen .question-filters {
+    gap: 10px 20px; /* 縦横のgap */
+}
+.history-screen .question-filter-item label {
+    font-size: 0.9em;
+}
+
+.history-screen .history-table-container {
+  overflow-x: auto; /* 横スクロールを可能に */
+  /* max-height は削除または調整して、縦スクロールがコンテナ全体で制御されるようにする */
+  /* overflow-y: auto; */ /* コンテナ自体の縦スクロールは screen-container で制御 */
+}
+
+.history-screen table {
+  /* width: 100%; を削除または min-width に変更して、内容に応じて幅が広がるようにする */
+  min-width: 100%; /* 少なくともコンテナ幅は確保 */
+  border-collapse: collapse;
+  margin-top: 10px;
+  /* table-layout: fixed; を削除して内容に応じて列幅が変わるようにする */
+}
+.history-screen th, .history-screen td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 0.9em;
+  white-space: nowrap; /* ★セル内での改行を禁止 */
+  /* overflow: hidden; を削除 */
+  /* text-overflow: ellipsis; を削除 */
+}
+/* 自由記述セルの折り返しスタイルを削除 */
+/* .history-screen td .free-text-cell { ... } */
+
+/* 日付列のスタイル調整 (必要であれば) */
+.history-screen th:first-child, .history-screen td:first-child {
+    /* width: 150px; 固定幅を削除または調整 */
+    white-space: nowrap; /* 日付も改行しない */
+}
+/* 操作列のスタイル */
+.history-screen th:last-child, .history-screen td:last-child {
+    width: 80px; /* 操作列の幅は固定しても良い */
+    text-align: center;
+    white-space: nowrap;
+}
+/* 他の列の最小幅設定は削除または調整 */
+/* .history-screen th:not(:first-child):not(:last-child), ... { min-width: 100px; } */
+
+
+.history-screen th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.history-screen tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.history-screen tr:hover {
+  background-color: #f1f1f1;
+}
+.history-screen .delete-history-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    font-size: 0.8em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.history-screen .delete-history-button:hover {
+    background-color: #d32f2f;
+}
