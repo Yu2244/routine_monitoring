@@ -1,0 +1,39 @@
+/* Styles moved from GraphScreen.jsx */
+.graph-screen .graph-controls {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.graph-screen .graph-controls label {
+  margin-right: 15px;
+}
+.graph-screen .graphs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between charts */
+}
+.graph-screen .chart-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.graph-screen .chart-container h3 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #333;
+}
+.graph-screen .chart-container.no-data {
+    text-align: center;
+    color: #888;
+    padding: 40px 20px;
+}
+/* Ensure recharts tooltips are visible */
+.recharts-tooltip-wrapper {
+  z-index: 1000 !important; /* Ensure tooltip is on top */
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  padding: 10px !important;
+}
